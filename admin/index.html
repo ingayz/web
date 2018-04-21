@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+
+<title>Login de Acceso </title>
+
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+<link rel="stylesheet" type="text/css"  href="../tools/css/bootstrap.css">
+<script src="../tools/js/bootstrap.js"></script>
+<script src="../tools/js/jquery-2.1.4.min.js" ></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="../ccs/bordes.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+
+<body background="#4c4c4">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+        
+<div class="row vertical-offset-100">
+<div class="col-md-4 col-md-offset-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><img src="../images/logo Transparente.png" alt="aeh"> ACCESO </h3>
+</div>
+<div class="panel-body">
+
+<form action = "recepcion.php" method = "POST">
+<fieldset>
+
+<div class="form-group">
+<input class="form-control" method = "POST"  placeholder="Usuario" name="txtuser" type="text">
+</div>
+
+<div class="form-group">
+<input class="form-control" placeholder="Password" name="txtpassword" type="password" value="">
+</div>
+
+<div class="checkbox">
+<label>
+<a href="administracion/agregaruser.php">Haz click aqui si olvidaste la contraseña</a></label>
+</div>
+
+<input class="btn btn-lg btn-success btn-block" type="submit" value="Login" name="datos">
+
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
