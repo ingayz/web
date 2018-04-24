@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alcaldìa el Hatillo</title>
+    <title>Alcaldía El Hatillo</title>
+    <link href="img/logo1.png" rel="icon">
     <link rel="stylesheet" href="css/estilos.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -19,15 +20,10 @@
     <script defer src="js/fontawesome-all.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style>
-        .cuerpo{
-            background:rgb(2, 0, 146);
-        }
-        .container-fluid{
-            margin-top: 30px;
-            height: auto;
-            width: 95%;
-        }
 
+        .panel-default{
+            width:50%;
+        }
         .panel-default>.panel-heading {
             color: #333;
             background-color: #005a92;
@@ -45,20 +41,24 @@
             font-size: 20px;
         }
 
+        p {
+            color: #fff;
+        }
     </style>
 </head>
-<body class="cuerpo">
+<body style="background: rgb(2, 0, 146)">
     <div class="container-fluid">
-        
-            <?php 
-            include "menu_b.php"; 
-            ?>
-          
-        <div class="carousel">
-        <br><br><br><br><br>
-        </div><!--carousel-->
-
-        <div class="alcaldia" align="center">  
+    <div class="row"><!--Logo-->
+                <div class="col-md-1">
+                    <br>
+                    <img src="img/logo1.png" alt="">
+                </div><!--logo col-md-4-->
+                <div class="col-md-11"><!--menu-->
+                <br>
+                    <?php include "menu_b.php"; ?>
+                </div><!--menu col-md-8-->
+            </div><!--row Logo y menu-->
+            <div class="alcaldia" align="center">  
         <br id="vision" >
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -96,17 +96,10 @@
                 </div>
             </div><!--Organigrama-->
         </div><!--alcaldia-->
-        
-
-        <div class="socials" align="right">
-	<div>Visitenos en Nuestras Redes Sociales</div>
-	<a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-	<a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-	<a href="#"><i class="fab fa-youtube-square fa-2x"></i></a>
-	<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-</div>
-            </div>
-    
+        <div class="row"><!--Dependencias-->
+            <?php include "dependencias.php"; ?>
+        </div><!--row Dependencias-->
     </div><!--container-fluid-->
+    
 </body>
 </html>

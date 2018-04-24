@@ -1,22 +1,21 @@
 <style>
 
     .navbar-header {
-            background: rgb(2, 0, 146);
+        margin-top:10px;
+        background: rgb(2, 0, 146);
         }
 
         nav.navbar.navbar-default {
             background: rgb(2, 0, 146);
-            height:15%;
+            
         }
 
         div#bs-example-navbar-collapse-1 {
-            margin-top:2%;
-            font-size: 20px;
+            font-size: 16px;
     
         }
 
         div#bs-example-navbar-collapse-1 a{
-       padding; 15%;
         color:#fff;
     
         }
@@ -24,13 +23,6 @@
         div#bs-example-navbar-collapse-1 li:hover{
         background:#005a92;
     
-        }
-
-        div#logo img {
-          width:50%;
-          border: px solid #fff;
-          border-radius: 5px;
-          background:#fff;
         }
 
         .navbar-nav>li>.dropdown-menu {
@@ -51,12 +43,11 @@
 
 </style>
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default ">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header"id ="logo" >
       <a class="navbar-brand" href="#">
-        <img alt="" src="img/logo1.png">
-      </a>
+        
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -80,8 +71,21 @@
             <li><a href="alcaldia.php#organigrama">Organigrama</a></li>
           </ul>
         </li>
-        <li><a href="#">SERVICIOS</a></li>
-        <li><a href="#">TRANSPARENCIA</a></li>
+        <li><a href="servicios.php">SERVICIOS</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TRANSPARENCIA <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="transparencia.php#ordenanzas">Ordenanzas</a></li>
+            <li><a href="transparencia.php#distribucion institucional">Distribución Institucional</a></li>
+            <li><a href="transparencia.php#plan operativo">Plan Operativo</P></li>
+            <li><a href="transparencia.php#memoria y cuenta">Memoria y Cuenta</a></li>
+            <li><a href="transparencia.php#ejecucion presupuestaria">Ejecucion Presupuestaria</a></li>
+            <li><a href="transparencia.php#fondo de compensacion internacional">Fondo de Compensacion Internacional</a></li>
+            <li><a href="transparencia.php#presupuesto participativo">Presupuesto Participativo</a></li>
+            <li><a href="transparencia.php#presupuesto ciudadano">Presupuesto Ciudadano</a></li>
+            <li><a href="transparencia.php#contrataciones publicas">Contrataciones Públicas</a></li>
+        </ul>
+        </li>
         <li><a href="#">LLAMADO A CONCURSOS</a></li>
         <li><a href="#">NOTICIAS</a></li>
         <li><a href="#">CONTACTENOS</a></li>
