@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alcaldía El Hatillo</title>
-    <link href="img/logo1.png" rel="icon">
-    <link rel="stylesheet" href="css/estilos.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script defer src="js/fontawesome-all.js"></script>
+    <?php
+    include "links.html";
+    include "scripts.html";
+    ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style>
     p {

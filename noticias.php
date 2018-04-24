@@ -1,3 +1,16 @@
+<?php
+include 'admin/cbd.php';
+
+$sql = "SELECT * FROM noticias ORDER BY id_noticia DESC";
+$query = $base->prepare($sql);
+$query->execute();
+$model = array();
+while($rows = $query->fetch())
+{
+    $model[] = $rows;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,28 +46,20 @@
             </div><!--menu col-md-8-->
         </div><!--row Logo y menu-->
         <br>
+         
         <div id="servicios" class="row"><!--Pago en Linea-->
+        <?php foreach($model as $row): ?>
             <div class="col-sm-6 col-md-4"><!--Pago en Linea-->
                 <div class="thumbnail">
-                    <img src="img/pel.jpg" alt="...">
+                    <img src="admin/uploads/<?php echo $row['foto']; ?>" class="img-fluid" alt="">
                     <div class="caption">
-                        <h3>Pago en Linea</h3>
-                        <p>El sistema de pago en linea le ofrece la posibilidad de pagar sus impuestos municipales desde la comidad de su hogar u ofinica.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                        <h3><?php echo $row['titulo']; ?></h3>
+                        <p><a class="btn btn-primary" role="button" href="noticia1.php?titulo=<?php echo $row['titulo']; ?> & foto=<?php echo $row['foto']; ?> & noticia=<?php echo $row['noticia'] ?>" class="link-details" title="More Details"><i class="ion ion-android-open"></i>Leer más...</a></p>
                     </div><!--caption-->
                 </div><!--thumbnail-->
             </div><!--col-sm-6 col-md-4-->
+            <?php endforeach;?>   
             
-            <div class="col-sm-6 col-md-4"><!--Tramites-->
-                <div class="thumbnail">
-                    <img src="img/tramites.jpg" alt="...">
-                    <div class="caption">
-                        <h3>Tramites</h3>
-                        <p>El sistema de tramites le ofrece la posibilidad de revisar los recaudos que debe consignar, asi como tambien descargar la planilla correspondientes desde la comidad de su hogar u ofinica.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-                    </div><!--caption-->
-                </div><!--thumbnail-->
-            </div><!--col-sm-6 col-md-4-->
         </div><<!--row Tramites-->
         <div class="dependencias">
             <?php include "dependencias.php"; ?>
