@@ -33,7 +33,7 @@
         }
 
         p {
-            color: #fff;
+            color: #000;
         }
     </style>
 </head>
@@ -48,49 +48,27 @@
                 <br>
                     <?php include "menu_b.php"; ?>
                 </div><!--menu col-md-8-->
-      </div><!--row Logo y menu-->
+            </div><!--row Logo y menu-->
             <div class="alcaldia" align="center">  
         <br id="vision" >
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">MISIÓN</h3>
+                    <h3 class="panel-title">Alcaldía El Hatillo</h3>
                 </div>
                 <div class="panel-body">
-                    Nuestra Misión Es Servir Con Vocación y Convicción a Los Hatillanos a Través De Una Gestión Transparante, Participativa e Innovadora Para Alcalzar Un Municipio Próspero y De Convivencia.
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.9582077061964!2d-66.82834268564332!3d10.424891192560642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2af79478d69e97%3A0x4d47f882a7e661ef!2sAlcaldia+de+El+Hatillo!5e0!3m2!1ses-419!2sve!4v1521948548146" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <p><h3>Dirección</h3>
+                    <address> Calle Escalona frente a la, Calle Bolivar las Marias, Caracas 1083, Miranda</address></p>
+                    <h3>Número Telefonico</h3>
+                    <p><a href="tel:+155895548855">0212-963.49.75</a></p>
+                    <h3>Email</h3>
+                    <p><a href="mailto:alejandro.amaya2006@gmail.com">atencionalciudadano@alcaldiaelhatillo.gob.ve</a></p>
                 </div>
             </div><!--Mision-->
-            <br id="valores" >
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 id="vision" class="panel-title">VISIÓN</h3>
-                </div>
-                <div class="panel-body">
-                Convertir al Municipio El Hatillo En Un Lugar Próspero y Seguro Para El Encuentro De Los Ciudadanos.
-                </div>
-            </div><!--Vision-->
-            <br id="organigrama">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3  class="panel-title">VALORES</h3>
-                </div>
-                <div class="panel-body">
-                Solidaridad, Humildad, Compromiso, Justicia, Institucionalidad, Honestidad, Respeto y Tolerancia.
-                </div>
-            </div><!--Valores-->
-            <br  >
-            <div  class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">ORGANIGRAMA</h3>
-                </div>
-                <div class="panel-body">
-                    <img src="img/organigrama.png" alt="">
-                </div>
-            </div><!--Organigrama-->
+            
         </div><!--alcaldia-->
         <div class="row"><!--Dependencias-->
-            <div align="center">
-              <?php include "dependencias.php"; ?>
-                </div>
+            <?php include "dependencias.php"; ?>
         </div><!--row Dependencias-->
     </div><!--container-fluid-->
     

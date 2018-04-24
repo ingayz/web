@@ -59,7 +59,7 @@ p {
             <br>
                 <?php include "menu_b.php"; ?>
             </div><!--menu col-md-8-->
-        </div><!--row Logo y menu-->
+      </div><!--row Logo y menu-->
 
         <div class="alcaldia" align="center">
         <div class="panel panel-default">
@@ -101,8 +101,13 @@ p {
                     </tbody>
                     </table>
                 </div>
-            </div><!--Mision-->
+          </div><!--Mision-->
         </div><!--alcaldia-->
+        <div class="dependencias">
+            <div align="center">
+              <?php include "dependencias.php"; ?>
+                </div>
+        </div><!--dependencias-->
     </div><!--container-fluid-->
     
 </body>

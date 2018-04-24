@@ -36,30 +36,37 @@
         <div id="servicios" class="row"><!--Pago en Linea-->
             <div class="col-sm-6 col-md-4"><!--Pago en Linea-->
                 <div class="thumbnail">
-                    <img src="img/pel.jpg" alt="...">
+                    <div align="center"><img src="img/pel.jpg" alt="...">
+                    </div>
                     <div class="caption">
                         <h3>Pago en Linea</h3>
                         <p>El sistema de pago en linea le ofrece la posibilidad de pagar sus impuestos municipales desde la comidad de su hogar u ofinica.</p>
                         <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
                     </div><!--caption-->
-                </div><!--thumbnail-->
+              </div><!--thumbnail-->
             </div><!--col-sm-6 col-md-4-->
             
             <div class="col-sm-6 col-md-4"><!--Tramites-->
                 <div class="thumbnail">
-                    <img src="img/tramites.jpg" alt="...">
+                    <div align="center"><img src="img/tramites.jpg" alt="...">
+                    </div>
                     <div class="caption">
                         <h3>Tramites</h3>
                         <p>El sistema de tramites le ofrece la posibilidad de revisar los recaudos que debe consignar, asi como tambien descargar la planilla correspondientes desde la comidad de su hogar u ofinica.</p>
                         <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
                     </div><!--caption-->
-                </div><!--thumbnail-->
+              </div><!--thumbnail-->
             </div><!--col-sm-6 col-md-4-->
         </div><<!--row Tramites-->
         <div class="dependencias">
-            <?php include "dependencias.php"; ?>
+            <div align="center">
+              <?php include "dependencias.php"; ?>
+                </div>
         </div><!--dependencias-->
-    </div><!--container-fluid-->
-    
+    </div>
+    <div align="center">
+      <!--container-fluid-->
+      
+    </div>
 </body>
 </html>

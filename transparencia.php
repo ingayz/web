@@ -48,7 +48,7 @@
                 <br>
                     <?php include "menu_b.php"; ?>
                 </div><!--menu col-md-8-->
-            </div><!--row Logo y menu-->
+      </div><!--row Logo y menu-->
             <div class="alcaldia" align="center">  
         <br id="ordenanzas" >
             <div class="panel panel-default">
@@ -277,7 +277,9 @@
 
         </div><!--alcaldia-->
         <div class="row"><!--Dependencias-->
-            <?php include "dependencias.php"; ?>
+            <div align="center">
+              <?php include "dependencias.php"; ?>
+                </div>
         </div><!--row Dependencias-->
     </div><!--container-fluid-->
     

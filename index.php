@@ -107,7 +107,9 @@
             </div><!--row Carousel-->
 
             <div class="row"><!--Dependencias-->
-                <?php include "dependencias.php"; ?>
+                <div align="center">
+                  <?php include "dependencias.php"; ?>
+                    </div>
             </div><!--row Dependencias-->
             
             

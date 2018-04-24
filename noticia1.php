@@ -1,3 +1,12 @@
+<?php
+include 'admin/cbd.php';
+$titulo = $_GET["titulo"];
+$foto = $_GET["foto"];
+$noticia = $_GET["noticia"];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +42,7 @@
         }
 
         p {
-            color: #fff;
+            color: #000;
         }
     </style>
 </head>
@@ -53,39 +62,14 @@
         <br id="vision" >
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">MISIÓN</h3>
+                    <h3 class="panel-title"><?php echo $titulo; ?></h3>
                 </div>
                 <div class="panel-body">
-                    Nuestra Misión Es Servir Con Vocación y Convicción a Los Hatillanos a Través De Una Gestión Transparante, Participativa e Innovadora Para Alcalzar Un Municipio Próspero y De Convivencia.
+                    <img src="admin/uploads/<?php echo $foto; ?>" class="img-fluid" alt="">
+                    <p><?php echo $noticia; ?></p>
                 </div>
             </div><!--Mision-->
-            <br id="valores" >
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 id="vision" class="panel-title">VISIÓN</h3>
-                </div>
-                <div class="panel-body">
-                Convertir al Municipio El Hatillo En Un Lugar Próspero y Seguro Para El Encuentro De Los Ciudadanos.
-                </div>
-            </div><!--Vision-->
-            <br id="organigrama">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3  class="panel-title">VALORES</h3>
-                </div>
-                <div class="panel-body">
-                Solidaridad, Humildad, Compromiso, Justicia, Institucionalidad, Honestidad, Respeto y Tolerancia.
-                </div>
-            </div><!--Valores-->
-            <br  >
-            <div  class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">ORGANIGRAMA</h3>
-                </div>
-                <div class="panel-body">
-                    <img src="img/organigrama.png" alt="">
-                </div>
-            </div><!--Organigrama-->
+            
         </div><!--alcaldia-->
         <div class="row"><!--Dependencias-->
             <div align="center">

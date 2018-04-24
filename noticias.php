@@ -62,7 +62,9 @@ while($rows = $query->fetch())
             
         </div><<!--row Tramites-->
         <div class="dependencias">
-            <?php include "dependencias.php"; ?>
+            <div align="center">
+              <?php include "dependencias.php"; ?>
+                </div>
         </div><!--dependencias-->
     </div><!--container-fluid-->
     

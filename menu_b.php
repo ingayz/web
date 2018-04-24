@@ -88,7 +88,7 @@
         </li>
         <li><a href="llamado_a_concursos.php">LLAMADO A CONCURSOS</a></li>
         <li><a href="noticias.php">NOTICIAS</a></li>
-        <li><a href="contactenos.html">CONTACTENOS</a></li>
+        <li><a href="contactenos.php">CONTACTENOS</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
