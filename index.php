@@ -1,3 +1,17 @@
+<?php
+include 'admin/cbd.php';
+
+$sql = "SELECT * FROM noticias ORDER BY id_noticia DESC LIMIT 5";
+$query = $base->prepare($sql);
+$query->execute();
+$model = array();
+while($rows = $query->fetch())
+{
+    $model[] = $rows;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,23 +28,26 @@
     p {
     color: #fff;
     }
+    .body{
+        background-image: url("img/Fondos/mosaico1.jpg");
+    }
 </style>
 </head>
-<body style="background: rgb(2, 0, 146)">    
+<body class="body">    
         <div class="container-fluid">
             <div class="row"><!--Logo-->
-                <div class="col-md-1">
+                <div class="col-md-2">
                     <br>
-                    <img src="img/logo1.png" alt="">
+                    <img src="img/logos/el-hatillo-largo.png" alt="">
                 </div><!--logo col-md-4-->
-                <div class="col-md-11"><!--menu-->
+                <div class="col-md-10"><!--menu-->
                 <br>
                     <?php include "menu_b.php"; ?>
                 </div><!--menu col-md-8-->
             </div><!--row Logo y menu-->
             <div class="row"><!--Carousel-->
             <div class="contenedor">
-                <img src="img/colores_admon.png">
+                <!--img src="img/colores_admon.png"-->
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -48,15 +65,15 @@
                                         <p>Sera que por fin</p-->
                                     </div>
                             </div>
-
+                            <?php foreach($model as $row): ?>
                             <div class="item">
-                                <img src="img/1.jpg" alt="...">
+                                <img src="admin/uploads/<?php echo $row['foto']; ?>" alt="...">
                                     <div class="carousel-caption">
-                                        <h3>ALCALDÍA EJECUTA JORNADA DE LIMPIEZA EN EL MUNICIPIO</h3>
+                                        <h3><?php echo $row['titulo']; ?></h3>
                                     </div>
                             </div>
-
-                            <div class="item">
+                            <?php endforeach;?>
+                            <!--div class="item">
                                 <img src="img/2.jpg" alt="...">
                                     <div class="carousel-caption">
                                         <h3>CON EL LEMA HAZ LO POSIBLE SE INICIA LA JORNADA DE RECAUDACIÓN</h3>
@@ -75,7 +92,7 @@
                                     <div class="carousel-caption">
                                         <h3>POLICIA EL HATILLO INAGURA SALON DE PRACTICA DE TIRO</h3>
                                     </div>
-                            </div>
+                            </div-->
 
                             <!--   
                             <?php foreach($model as $row): ?>
@@ -111,9 +128,6 @@
                   <?php include "dependencias.php"; ?>
                     </div>
             </div><!--row Dependencias-->
-            
-            
-
         </div><!--container-fluid-->
     
 </body>

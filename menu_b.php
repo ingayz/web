@@ -1,22 +1,22 @@
 <style>
 
     .navbar-header {
-        margin-top:10px;
-        background: rgb(2, 0, 146);
+        margin-top:0px;
+        background: #fff;
         }
 
         nav.navbar.navbar-default {
-            background: rgb(2, 0, 146);
+            background: #fff;
             
         }
 
         div#bs-example-navbar-collapse-1 {
-            font-size: 16px;
+            font-size: 13px;
     
         }
 
         div#bs-example-navbar-collapse-1 a{
-        color:#fff;
+        color:#005a92;
     
         }
 
@@ -29,16 +29,16 @@
             margin-top: 0;
             border-top-left-radius: 0;
             border-top-right-radius: 0;
-            background: #005a92;
+            background: #fff;
         }
 
         .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>.dropdown-menu>.dropdown-togglea li a:hover{
-          background:#87C141;/*Color del menu al ser seleccionado*/
+          background:#005a92;/*Color del menu al ser seleccionado*/
         }
 
         div#bs-example-navbar-collapse-1 a:hover {
           color: #fff;
-          background: #87C141;/*Color de la barra del menu desplegable*/
+          background: #005a92;/*Color de la barra del menu desplegable*/
         }
 
 </style>

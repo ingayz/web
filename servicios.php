@@ -18,20 +18,24 @@
         #servicios{
             float:left;
         }
-    </style>    
+
+         .body{
+        background-image: url("img/Fondos/mosaico1.jpg");
+    }
+</style>
 </head>
-<body style="background: rgb(2, 0, 146)">
+<body class="body">  
     <div class="container-fluid">
-        <div class="row"><!--Logo-->
-            <div class="col-md-1">
+    <div class="row"><!--Logo-->
+                <div class="col-md-2">
+                    <br>
+                    <img src="img/logos/el-hatillo-largo.png" alt="">
+                </div><!--logo col-md-4-->
+                <div class="col-md-10"><!--menu-->
                 <br>
-                <img src="img/logo1.png" alt="">
-            </div><!--logo col-md-4-->
-            <div class="col-md-11"><!--menu-->
-            <br>
-                <?php include "menu_b.php"; ?>
-            </div><!--menu col-md-8-->
-        </div><!--row Logo y menu-->
+                    <?php include "menu_b.php"; ?>
+                </div><!--menu col-md-8-->
+            </div><!--row Logo y menu-->
         <br>
         <div id="servicios" class="row"><!--Pago en Linea-->
             <div class="col-sm-6 col-md-4"><!--Pago en Linea-->
@@ -57,7 +61,7 @@
                     </div><!--caption-->
               </div><!--thumbnail-->
             </div><!--col-sm-6 col-md-4-->
-        </div><<!--row Tramites-->
+        </div><!--row Tramites-->
         <div class="dependencias">
             <div align="center">
               <?php include "dependencias.php"; ?>

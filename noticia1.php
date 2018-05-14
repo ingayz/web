@@ -22,7 +22,7 @@ $noticia = $_GET["noticia"];
     <style>
 
         .panel-default{
-            width:50%;
+            width:80%;
         }
         .panel-default>.panel-heading {
             color: #333;
@@ -44,20 +44,24 @@ $noticia = $_GET["noticia"];
         p {
             color: #000;
         }
-    </style>
+
+         .body{
+        background-image: url("img/Fondos/mosaico1.jpg");
+        }
+</style>
 </head>
-<body style="background: rgb(2, 0, 146)">
+<body class="body">  
     <div class="container-fluid">
     <div class="row"><!--Logo-->
-                <div class="col-md-1">
+                <div class="col-md-2">
                     <br>
-                    <img src="img/logo1.png" alt="">
+                    <img src="img/logos/el-hatillo-largo.png" alt="">
                 </div><!--logo col-md-4-->
-                <div class="col-md-11"><!--menu-->
+                <div class="col-md-10"><!--menu-->
                 <br>
                     <?php include "menu_b.php"; ?>
                 </div><!--menu col-md-8-->
-      </div><!--row Logo y menu-->
+            </div><!--row Logo y menu-->
             <div class="alcaldia" align="center">  
         <br id="vision" >
             <div class="panel panel-default">
